@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="deep_blue">#1A237E</color>
+    <color name="teal_cyan">#00838F</color>
+    <color name="accessible_green">#2E7D32</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_neutral">#F5F5F5</color>
+    <color name="deep_neutral">#121212</color>
+
+    <color name="primary">@color/deep_blue</color>
+    <color name="secondary">@color/teal_cyan</color>
+    <color name="accent">@color/accessible_green</color>
 </resources>

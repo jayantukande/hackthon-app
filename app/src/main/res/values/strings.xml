@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SignBridgeCommunication</string>
+    <string name="login_title">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_text">Login</string>
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_invalid_password">Password must be at least 6 characters</string>
+    <string name="login_success">Login successful!</string>
 </resources>

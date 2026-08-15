@@ -1,0 +1,5 @@
+- [x] Add login strings to `strings.xml`
+- [x] Create `activity_login.xml` layout
+- [x] Create `LoginActivity.java`
+- [x] Update `AndroidManifest.xml` to make `LoginActivity` the launcher
+- [x] Verify the implementation

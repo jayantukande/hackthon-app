@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.signbridgecommunication.app"
-    compileSdk = 35
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.signbridgecommunication.app"
@@ -41,14 +41,21 @@ dependencies {
     implementation(libs.activity.ktx)
     
     // Lifecycle & ViewModel
-    implementation("androidx.lifecycle:lifecycle-viewmodel:2.8.7")
-    implementation("androidx.lifecycle:lifecycle-livedata:2.8.7")
+    implementation(libs.lifecycle.viewmodel)
+    implementation(libs.lifecycle.livedata)
+    
+    // Room
+    implementation(libs.room.runtime)
+    annotationProcessor(libs.room.compiler)
     
     // DataStore
-    implementation("androidx.datastore:datastore-preferences:1.1.1")
+    implementation(libs.datastore.preferences)
+    implementation("androidx.datastore:datastore-rxjava3:1.1.1")
     implementation("androidx.datastore:datastore-preferences-rxjava3:1.1.1")
-    implementation("io.reactivex.rxjava3:rxjava:3.1.8")
-    implementation("io.reactivex.rxjava3:rxandroid:3.0.2")
+    
+    // RxJava
+    implementation(libs.rxjava)
+    implementation(libs.rxandroid)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

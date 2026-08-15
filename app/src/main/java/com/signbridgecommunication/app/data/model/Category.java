@@ -1,20 +1,26 @@
 package com.signbridgecommunication.app.data.model;
 
-public class Category {
-    private final String id;
-    private final String name;
-    private final int iconResId;
-    private final int phraseCount;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
-    public Category(String id, String name, int iconResId, int phraseCount) {
-        this.id = id;
+@Entity(tableName = "categories")
+public class Category {
+    @PrimaryKey(autoGenerate = true)
+    private int id;
+    private String name;
+    private String iconName; // drawable resource name
+
+    public Category(String name, String iconName) {
         this.name = name;
-        this.iconResId = iconResId;
-        this.phraseCount = phraseCount;
+        this.iconName = iconName;
     }
 
-    public String getId() { return id; }
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+
     public String getName() { return name; }
-    public int getIconResId() { return iconResId; }
-    public int getPhraseCount() { return phraseCount; }
+    public void setName(String name) { this.name = name; }
+
+    public String getIconName() { return iconName; }
+    public void setIconName(String iconName) { this.iconName = iconName; }
 }

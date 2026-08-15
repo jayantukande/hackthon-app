@@ -1,10 +1,24 @@
 <resources>
-    <string name="app_name">SignBridgeCommunication</string>
+    <string name="app_name">SignBridge</string>
+    <string name="tagline">Connecting Communication Beyond Words</string>
+    <string name="hello_welcome">Hello, Welcome to SignBridge</string>
+    <string name="search_hint">Search signs...</string>
+    <string name="dashboard_stats">Dashboard Statistics</string>
+    <string name="categories">Categories</string>
+    <string name="recently_used">Recently Used</string>
+    <string name="learn_signs">Learn Signs</string>
+    <string name="text_to_speech">Text to Speech</string>
+
     <string name="login_title">Login</string>
+    <string name="welcome_back">Welcome Back</string>
     <string name="email_hint">Email</string>
     <string name="password_hint">Password</string>
     <string name="login_button_text">Login</string>
     <string name="error_invalid_email">Invalid email address</string>
     <string name="error_invalid_password">Password must be at least 6 characters</string>
     <string name="login_success">Login successful!</string>
+
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="get_started">Get Started</string>
 </resources>

@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -24,6 +27,36 @@
         <activity
             android:name=".MainActivity"
             android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.emergency.EmergencyActivity"
+            android:exported="false"
+            android:label="Emergency"
+            android:theme="@style/Theme.SignBridgeCommunication">
+        </activity>
+        <activity
+            android:name=".ui.comm.CommunicationModeActivity"
+            android:exported="false"
+            android:label="Communication Mode"
+            android:theme="@style/Theme.SignBridgeCommunication">
+        </activity>
+        <activity
+            android:name=".ui.detail.SignDetailActivity"
+            android:exported="false"
+            android:label="Sign Details"
+            android:theme="@style/Theme.SignBridgeCommunication">
+        </activity>
+        <activity
+            android:name=".ui.editprofile.EditProfileActivity"
+            android:exported="false"
+            android:label="Edit Profile"
+            android:theme="@style/Theme.SignBridgeCommunication">
+        </activity>
+        <activity
+            android:name=".ui.about.AboutActivity"
+            android:exported="false"
+            android:label="About SignBridge"
+            android:theme="@style/Theme.SignBridgeCommunication">
         </activity>
     </application>
 
